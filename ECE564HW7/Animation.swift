@@ -80,6 +80,7 @@ struct AnimationView: View {
                 }).buttonStyle(GrowingButton())
 //                    .offset(y:10)
                 
+                
                 GeometryReader { geometry in
                     Path { path in
                         let width = min(geometry.size.width, geometry.size.height)
