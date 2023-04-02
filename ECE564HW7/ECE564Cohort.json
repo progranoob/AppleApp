@@ -1,0 +1,73 @@
+[   {
+    "netid": "rt113",
+    "firstname": "Ric",
+    "lastname": "Telford",
+    "wherefrom": "Chatham County, NC",
+    "gender": 1,
+    "role": "Professor",
+    "hobby": "Golf",
+    "movie": "Casablanca",
+    "languages": ["Swift", "C", "C++"],
+    "picture": "",
+    "team": "",
+    "email": "rt113@duke.edu"
+    },
+    {
+      "netid": "yf147",
+      "firstname": "Yuan",
+      "lastname": "Fang",
+      "wherefrom": "Durham, NC",
+      "gender": 2,
+      "hobby": "Music",
+      "movie": "",
+      "role": "TA",
+      "languages": ["Swift", "C++"],
+      "picture": "",
+      "team": "",
+      "email": "yf147@duke.edu"
+    },
+    {
+      "netid": "ys331",
+      "firstname": "Sophie",
+      "lastname": "Shi",
+      "wherefrom": "Durham, NC",
+      "gender": 2,
+      "hobby": "Cooking",
+      "role": "TA",
+      "movie": "",
+      "languages": ["Swift", "Python"],
+      "picture": "",
+      "team": "",
+      "email": "ys331@duke.edu"
+
+    },
+    {
+      "netid": "rs590",
+      "firstname": "Rocco",
+      "lastname": "Su",
+      "wherefrom": "Durham, NC",
+      "gender": 1,
+      "hobby": "Music",
+      "role": "TA",
+      "movie": "",
+      "languages": ["Swift", "C++"],
+      "picture": "",
+      "team": "",
+      "email": "rs590@duke.edu"
+
+    },
+    {
+      "netid": "yz726",
+      "firstname": "Yuankai",
+      "lastname": "Zhu",
+      "wherefrom": "Durham, NC",
+      "gender": 1,
+      "hobby": "Photography",
+      "role": "TA",
+      "movie": "",
+      "languages": ["Swift", "C++"],
+      "picture": "",
+      "team": "",
+      "email": "yz726@duke.edu"
+    }
+]

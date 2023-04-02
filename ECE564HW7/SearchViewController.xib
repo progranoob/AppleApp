@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="ECE564HW6" customModuleProvider="target">
+            <connections>
+                <outlet property="ScrollText" destination="BCC-5O-Gmu" id="JM2-Ud-K4T"/>
+                <outlet property="clearbutton" destination="Xzj-rP-53b" id="kbJ-ZQ-kQi"/>
+                <outlet property="firstname" destination="ZY3-Rh-vrK" id="S2y-YI-McD"/>
+                <outlet property="from" destination="gVm-ox-gsA" id="hIV-ff-hLP"/>
+                <outlet property="gender" destination="a2f-DC-5IM" id="xD6-cR-H0J"/>
+                <outlet property="hobby" destination="slU-Jb-cfl" id="aj0-oN-iHZ"/>
+                <outlet property="lastname" destination="2Ku-h0-VtL" id="HnS-GO-zGu"/>
+                <outlet property="listbutton" destination="hxI-aU-qXa" id="DiT-yP-h6i"/>
+                <outlet property="movie" destination="fxU-Ut-sNd" id="bxr-az-HGb"/>
+                <outlet property="netid" destination="wyw-8k-CYW" id="Bpn-0n-vu2"/>
+                <outlet property="progL" destination="jbJ-lN-mgf" id="COw-It-rGX"/>
+                <outlet property="returnbutton" destination="PcC-8d-DRI" id="hNp-Rh-8LV"/>
+                <outlet property="role" destination="4ev-PH-kSj" id="TLN-8Z-Dtb"/>
+                <outlet property="searchbutton" destination="0F2-VW-kHx" id="Bdj-z6-dY5"/>
+                <outlet property="team" destination="FWR-ur-SyB" id="zqv-r8-r58"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TuZ-9f-V4J">
+                    <rect key="frame" x="34" y="539" width="325" height="279"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="This is the output window:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BCC-5O-Gmu">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="500"/>
+                            <color key="backgroundColor" red="0.64301968239999996" green="0.69114694089999995" blue="0.78361636400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="500" id="LB2-tg-05n"/>
+                            </constraints>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="BCC-5O-Gmu" firstAttribute="leading" secondItem="TuZ-9f-V4J" secondAttribute="leading" id="8Lh-hA-B0j"/>
+                        <constraint firstAttribute="trailing" secondItem="BCC-5O-Gmu" secondAttribute="trailing" id="GYZ-5t-P5J"/>
+                        <constraint firstItem="BCC-5O-Gmu" firstAttribute="width" secondItem="TuZ-9f-V4J" secondAttribute="width" multiplier="1.03077" id="hfg-Yy-96Y"/>
+                        <constraint firstAttribute="bottom" secondItem="BCC-5O-Gmu" secondAttribute="bottom" id="hgC-Ot-MNs"/>
+                        <constraint firstItem="BCC-5O-Gmu" firstAttribute="top" secondItem="TuZ-9f-V4J" secondAttribute="top" id="u6e-cQ-EDi"/>
+                    </constraints>
+                </scrollView>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="netid" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wyw-8k-CYW">
+                    <rect key="frame" x="27" y="130" width="150" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <color key="textColor" systemColor="systemPurpleColor"/>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="From" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gVm-ox-gsA">
+                    <rect key="frame" x="207" y="130" width="150" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <color key="textColor" systemColor="systemPurpleColor"/>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Gender" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2f-DC-5IM">
+                    <rect key="frame" x="207" y="180" width="150" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <color key="textColor" systemColor="systemPurpleColor"/>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="prog languages (comma delimited)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jbJ-lN-mgf">
+                    <rect key="frame" x="27" y="280" width="330" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <color key="textColor" systemColor="systemPurpleColor"/>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="hobby" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="slU-Jb-cfl">
+                    <rect key="frame" x="27" y="230" width="150" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <color key="textColor" systemColor="systemPurpleColor"/>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="movie" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fxU-Ut-sNd">
+                    <rect key="frame" x="207" y="230" width="150" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <color key="textColor" systemColor="systemPurpleColor"/>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ku-h0-VtL">
+                    <rect key="frame" x="207" y="80" width="150" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <color key="textColor" systemColor="systemPurpleColor"/>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZY3-Rh-vrK">
+                    <rect key="frame" x="27" y="80" width="150" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <color key="textColor" systemColor="systemPurpleColor"/>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0F2-VW-kHx">
+                    <rect key="frame" x="153" y="380" width="79" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" systemColor="systemMintColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Search">
+                        <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                        <color key="baseForegroundColor" systemColor="systemCyanColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="Searchpressed:" destination="-1" eventType="touchUpInside" id="HZc-bY-t89"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PcC-8d-DRI">
+                    <rect key="frame" x="278" y="380" width="79" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Return">
+                        <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                        <color key="baseForegroundColor" systemColor="systemCyanColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="Returnpressed:" destination="-1" eventType="touchUpInside" id="dg2-7a-aCo"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Role" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ev-PH-kSj">
+                    <rect key="frame" x="27" y="180" width="150" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <color key="textColor" systemColor="systemPurpleColor"/>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxI-aU-qXa">
+                    <rect key="frame" x="27" y="380" width="80" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" systemColor="systemMintColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="List">
+                        <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                        <color key="baseForegroundColor" systemColor="systemCyanColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="Listpressed:" destination="-1" eventType="touchUpInside" id="ioj-Hp-XUh"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Teams" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FWR-ur-SyB">
+                    <rect key="frame" x="27" y="330" width="330" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                    <color key="textColor" systemColor="systemPurpleColor"/>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="20"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzj-rP-53b">
+                    <rect key="frame" x="27" y="434" width="80" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Clear">
+                        <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                        <color key="baseForegroundColor" systemColor="systemCyanColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="Clearpressed:" destination="-1" eventType="touchUpInside" id="ZBk-aw-yag"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jvQ-iH-3SX">
+                    <rect key="frame" x="152" y="434" width="80" height="40"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Save">
+                        <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                        <color key="baseForegroundColor" systemColor="systemCyanColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="Savepressed:" destination="-1" eventType="touchUpInside" id="NoX-y4-eiG"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.64269680256045814" green="0.66054824822942881" blue="0.78361636400222778" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="TuZ-9f-V4J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="480" id="1l2-lc-rOR"/>
+                <constraint firstItem="TuZ-9f-V4J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="34" id="PX4-qr-hnG"/>
+                <constraint firstItem="TuZ-9f-V4J" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="d4a-c4-NIK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TuZ-9f-V4J" secondAttribute="trailing" constant="34" id="wzN-g0-mP0"/>
+            </constraints>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
