@@ -72,12 +72,12 @@ struct AnimationView: View {
                     .offset(y: 30)
                 Button(action: {
                     print("pressed")
-                    self.playSound()
+                    player.stop()
                 },label: {
-                    Text("Music")
+                    Text("Close Music")
 //                        .offset(y:-90)
                         .font(.headline)
-                        .frame(width: 100, height: 50)
+                        .frame(width: 150, height: 50)
                 }).buttonStyle(GrowingButton())
 //                    .offset(y:10)
                 
@@ -161,7 +161,7 @@ struct AnimationView: View {
                     
                 
             }
-        }
+        }.onAppear(perform: self.playSound)
     }
 }
 
